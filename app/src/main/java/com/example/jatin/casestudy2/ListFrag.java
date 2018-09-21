@@ -28,6 +28,7 @@ public class ListFrag extends ListFragment {
             if (frag != null && frag.isInLayout()) {
                 frag.setText(getCapt(item));
                 frag.setImage(item);
+                frag.setWebPage(item);
             }
 
         }
