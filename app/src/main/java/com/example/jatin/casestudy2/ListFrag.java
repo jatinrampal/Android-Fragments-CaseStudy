@@ -27,6 +27,7 @@ public class ListFrag extends ListFragment {
                     getFragmentManager().findFragmentById(R.id.frag_capt);
             if (frag != null && frag.isInLayout()) {
                 frag.setText(getCapt(item));
+                frag.setImage(item);
             }
 
         }

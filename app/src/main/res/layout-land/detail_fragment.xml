@@ -17,6 +17,6 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="261dp"
+        android:layout_width="270dp"
         android:layout_height="166dp" />
 </LinearLayout>

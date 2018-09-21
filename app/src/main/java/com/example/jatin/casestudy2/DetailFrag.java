@@ -29,8 +29,29 @@ public class DetailFrag extends Fragment {
         view.setText(item);
     }
 
-    public void setImage(String item) {
-        ImageView view = (ImageView) getView().findViewById(R.id.imageView);
-        view.setImageResource(0);
+    public void setImage(String item)
+    {
+        ImageView imgView = (ImageView) getView().findViewById(R.id.imageView);
+        if (item.toLowerCase().contains("daredevil"))
+        {
+            imgView.setImageResource(R.mipmap.daredevil);
+        }
+        if (item.toLowerCase().contains("jessica jones"))
+        {
+            imgView.setImageResource(R.mipmap.jessica);
+        }
+        if (item.toLowerCase().contains("luke cage"))
+        {
+            imgView.setImageResource(R.mipmap.lukecage);
+        }
+        if (item.toLowerCase().contains("iron fist"))
+        {
+            imgView.setImageResource(R.mipmap.ironfist);
+        }
+        if (item.toLowerCase().contains("punisher"))
+        {
+            imgView.setImageResource(R.mipmap.punisher);
+        }
+
     }
 }
